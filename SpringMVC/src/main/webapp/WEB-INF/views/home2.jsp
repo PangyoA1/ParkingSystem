@@ -12,12 +12,10 @@
 
 <html>
 	<head>
-		<title>Home</title>
+		<title>Home2</title>
 	</head>
 <body>
-	<P>The time on the server is ${serverTime}.</P>
-	<button type="button" class="btn btn-info" onclick="window.location.href='home2'">Default</button>
-	
+	<button type="button" class="btn btn-info">Default2</button>
 </body>
 
 </html>
