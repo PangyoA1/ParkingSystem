@@ -3,3 +3,15 @@
 .customNav{
     background-color:#534e4e
 }
+
+.navbar-nav>li>a{
+    color:white !important
+}
+
+.navbar-brand{
+    color:white !important
+}
+
+.navbar-nav>.open>a, .navbar-nav>.active>a  {
+background-image: linear-gradient(to bottom, #534e4e ,#534e4e 100%) !important
+}
