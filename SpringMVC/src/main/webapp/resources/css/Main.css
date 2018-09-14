@@ -1,17 +1,44 @@
 @charset "UTF-8";
 
-.customNav{
-    background-color:#534e4e
+.customNav {
+	background-color: #534e4e
 }
 
-.navbar-nav>li>a{
-    color:white !important
+.navbar-nav>li>a {
+	color: white !important
+}
+
+.navbar-brand {
+	color: white !important
+}
+
+.navbar-nav>.open>a, .navbar-nav>.active>a {
+	background-image: linear-gradient(to bottom, #534e4e, #534e4e 100%)
+		!important
+}
+
+.navbar-header {
+	background-color: #534e4e;
+}
+
+.searchbar {
+	width: 70%;
 }
 
 .navbar-brand{
-    color:white !important
+	background-color : #534e4e !important;
 }
 
-.navbar-nav>.open>a, .navbar-nav>.active>a  {
-background-image: linear-gradient(to bottom, #534e4e ,#534e4e 100%) !important
+a{
+	font: inherit !important;
+}
+
+.customnavbar{
+	    margin-left: -1px;
+	
+}
+
+.container-fluid{
+	background-color: #534e4e;
+	
 }
