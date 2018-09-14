@@ -56,18 +56,17 @@ public class HomeController {
 	
 	@RequestMapping(value = "/home_sub1", method = RequestMethod.GET)
 	public String home_sub1(Locale locale, Model model) {
-
 		logger.info("Welcome home! The client locale is {}.", locale);
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
 		return "home_sub1";
-		
+	}
+
+	@RequestMapping(value = "/ParkingSystem", method = RequestMethod.GET)
+	public String ParkingSystem() {
+		return "ParkingSystem";
 	}
 	
+	@RequestMapping(value = "/Reservation", method = RequestMethod.GET)
+	public String Reservation() {
+		return "Reservation";
+	}
 }
