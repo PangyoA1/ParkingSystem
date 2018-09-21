@@ -69,4 +69,9 @@ public class HomeController {
 	public String Reservation() {
 		return "Reservation";
 	}
+	
+	@RequestMapping(value = "/MyProgress", method = RequestMethod.GET)
+	public String MyProgress() {
+		return "MyProgress";
+	}
 }

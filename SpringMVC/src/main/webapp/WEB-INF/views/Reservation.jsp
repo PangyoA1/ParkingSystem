@@ -52,7 +52,7 @@
 	</table>
 	</div>
 	<div class="col-md-6 col-xs-12">
-		<img src="resources/image/판교역주변.PNG" width="100%">
+		<img src="${pageContext.request.contextPath}/resources/image/pangyomap.png" width="100%">
 	</div>
 	
 </body>

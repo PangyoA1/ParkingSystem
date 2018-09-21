@@ -26,15 +26,13 @@
 					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Location</a></li>
+					<li><a href="MyProgress">My Progress</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-expanded="false">About
+						data-toggle="dropdown" role="button" aria-expanded="false">About us
 							<span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Location</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Separated link</a></li>
 						</ul></li>

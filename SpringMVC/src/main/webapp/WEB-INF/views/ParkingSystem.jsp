@@ -15,7 +15,7 @@
 <title>Parking System</title>
 </head>
 <body>
-	<jsp:include page="header_nav/header_nav.jsp" />
-	<div class="map"><img src="resources/image/판교역주변.PNG" width="700px"/></div>
+	<jsp:include page="header_nav/header_nav.jsp"/>
+	<div class="map"><img src="${pageContext.request.contextPath}/resources/image/pangyomap.png" width="700px"/></div>
 </body>
 </html>

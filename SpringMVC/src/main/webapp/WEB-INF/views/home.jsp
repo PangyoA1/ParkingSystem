@@ -15,7 +15,7 @@
 <br><br><br><br><br><br><br><br>
 	<P class="textcenter">${serverTime}.</P><br>
 	<div class="home3Alloter textcenter">3 Allotter</div><br><br><br>
-	<div class="textcenter"><button type="button" class="btn btn-info textcenter" onclick="window.location.href='home2'">GO INTO</button></div>
+	<div class="textcenter"><button type="button" class="btn btn-info textcenter" onclick="window.location.href='Reservation'">GO INTO</button></div>
 	
 </body>
 
