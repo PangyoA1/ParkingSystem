@@ -25,8 +25,8 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 
+		System.out.println("11111111111111");
 		logger.info("Welcome home! The client locale is {}.", locale);
-		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
@@ -40,9 +40,8 @@ public class HomeController {
 
 	@RequestMapping(value = "/home2", method = RequestMethod.GET)
 	public String home2(Locale locale, Model model) {
-
+		System.out.println("11111111111111");
 		logger.info("Welcome home! The client locale is {}.", locale);
-		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
@@ -74,4 +73,7 @@ public class HomeController {
 	public String MyProgress() {
 		return "MyProgress";
 	}
+
+    @RequestMapping(value = "/CoreUI", method = RequestMethod.GET)
+    public String CoreUI() {return "BootStrap/index";}
 }
