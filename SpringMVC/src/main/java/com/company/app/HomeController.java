@@ -2,8 +2,10 @@ package com.company.app;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
+import com.company.app.service.impl.BoardServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,14 +13,21 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Resource;
+
 /**
  * Handles requests for the application home page.
  */
+
+
 @Controller
 public class HomeController {
-	
+
+	@Resource(name = "BoardService")
+	private BoardServiceImpl BoardService;
+
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+	private static final String log = HomeController.class.getSimpleName();
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -73,7 +82,17 @@ public class HomeController {
 	public String MyProgress() {
 		return "MyProgress";
 	}
-
     @RequestMapping(value = "/CoreUI", method = RequestMethod.GET)
     public String CoreUI() {return "BootStrap/index";}
+
+	@RequestMapping(value = "/boardList.do")
+	public String boardList(Model model) throws Exception {
+		System.out.println("1111");
+		logger.info(log,"11111");
+		List list = BoardService.selectBoardList();
+		System.out.println("1111!!11");
+		logger.info(list.toString());
+		model.addAttribute("list", list);
+		return "boardList";
+	}
 }
