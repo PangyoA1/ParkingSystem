@@ -45,19 +45,18 @@ public class HomeController {
 
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
+
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
-		
+
 		return "home2";
 	}
-	
+
 	@RequestMapping(value = "/home_sub1", method = RequestMethod.GET)
 	public String home_sub1(Locale locale, Model model) {
 
 			final  String thisMethod =	Thread.currentThread().getStackTrace()[1].getMethodName();
 			logger.info("location is {}.", thisMethod);
-
 		return "home_sub1";
 	}
 
@@ -67,14 +66,14 @@ public class HomeController {
 			logger.info("location is {}.", thisMethod);
 			return "ParkingSystem";
 	}
-	
+
 	@RequestMapping(value = "/Reservation", method = RequestMethod.GET)
 	public String Reservation() {
 			final  String thisMethod =	Thread.currentThread().getStackTrace()[1].getMethodName();
 			logger.info("location is {}.", thisMethod);
 			return "Reservation";
 	}
-	
+
 	@RequestMapping(value = "/MyProgress", method = RequestMethod.GET)
 	public String MyProgress() {
 			final  String thisMethod =	Thread.currentThread().getStackTrace()[1].getMethodName();
