@@ -11,13 +11,14 @@ import java.util.List;
 
 @Service("BoardService")
 public class BoardServiceImpl implements BoardService {
-	@Autowired
-	private BoardDAO boardMapper;
 
-	@Override
-	@Transactional
-	public List<BoardVO> selectBoardList() throws Exception {
-		return boardMapper.selectBoardList();
-	}
+    @Autowired
+    private BoardDAO boardMapper;
+
+    @Override
+    @Transactional
+    public List<BoardVO> selectBoardList() throws Exception {
+        return boardMapper.selectBoardList();
+    }
 
 }
