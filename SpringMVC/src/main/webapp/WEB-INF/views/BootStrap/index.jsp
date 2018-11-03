@@ -74,7 +74,7 @@
               </a>
               <ul id="cNavItem1" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="index.html">Dashboard 1</a>
+                  <a class="nav-link nav-level-1" href="dashboad111111">Dashboard11111111111111!</a>
                 </li>
                 <!--<li class="nav-item">-->
                 <!--<a class="nav-link nav-level-1" href="index-2.html">Dashboard 2</a>-->
@@ -88,20 +88,20 @@
             <!--</a>-->
             <!--</li>-->
             <li class="nav-item">
-              <a class="nav-link" href="charts.html">
+              <a class="nav-link" href="Charts">
                 <i class="fa fa-pie-chart" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Charts</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="widgets.html">
+              <a class="nav-link" href="Widgets">
                 <i class="fa fa-list" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Widgets</span>
                 <span class="badge badge-success text-uppercase float-right d-none d-lg-block">New</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="Tables">
                 <i class="fa fa-table" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Tables</span>
               </a>
@@ -141,7 +141,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="grid.html">
+              <a class="nav-link" href="Grid">
                 <i class="fa fa-th" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Grid</span>
                 <span class="badge badge-danger text-uppercase float-right d-none d-lg-block">Hot</span>
@@ -160,10 +160,10 @@
               </a>
               <ul id="cNavItem6" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav2">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="login.html">Login</a>
+                  <a class="nav-link nav-level-1" href="login">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="404.html">404 Error</a>
+                  <a class="nav-link nav-level-1" href="page404">404 Error</a>
                 </li>
               </ul>
             </li>
@@ -174,27 +174,27 @@
               </a>
               <ul id="cNavItem5" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav2">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="buttons.html">Buttons</a>
+                  <a class="nav-link nav-level-1" href="buttons">Buttons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="typography.html">Typography</a>
+                  <a class="nav-link nav-level-1" href="typography">Typography</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="icons.html">Icons</a>
+                  <a class="nav-link nav-level-1" href="icons">Icons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="navs.html">Navs</a>
+                  <a class="nav-link nav-level-1" href="navs">Navs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="badges.html">Badges, Labels</a>
+                  <a class="nav-link nav-level-1" href="badges">Badges, Labels</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="progress.html">Progress</a>
+                  <a class="nav-link nav-level-1" href="progress">Progress</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="forms.html">
+              <a class="nav-link" href="forms">
                 <i class="fa fa-id-card" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Forms</span>
               </a>
@@ -406,7 +406,7 @@
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Mailbox
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="login.html">
+              <a class="dropdown-item" href="login">
                 <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
               </a>
             </div>

@@ -81,7 +81,8 @@ public class HomeController {
 			return "MyProgress";
 	}
     @RequestMapping(value = "/CoreUI", method = RequestMethod.GET)
-    public String CoreUI() {return "BootStrap/index";}
+    //public String CoreUI() {return "BootStrap/index";}
+	public String CoreUI() {return "v2/home";}
 
 	@RequestMapping(value = "/boardList.do")
 	public String boardList(Model model) throws Exception {
@@ -91,6 +92,45 @@ public class HomeController {
 			logger.info(list.toString());
 			model.addAttribute("list", list);
 
-			return "boardList";
+			return "Reservation";
 	}
+
+	@RequestMapping(value = "/Charts", method = RequestMethod.GET)
+	public String Chart() {return "BootStrap/charts";}
+
+	@RequestMapping(value = "/Widgets", method = RequestMethod.GET)
+	public String Widgets() {return "BootStrap/widgets";}
+
+	@RequestMapping(value = "/Tables", method = RequestMethod.GET)
+	public String Tables() {return "BootStrap/tables";}
+
+	@RequestMapping(value = "/Grid", method = RequestMethod.GET)
+	public String Gables() {return "BootStrap/grid";}
+
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login() {return "BootStrap/login";}
+
+	@RequestMapping(value = "/page404", method = RequestMethod.GET)
+	public String page404() {return "BootStrap/404";}
+
+	@RequestMapping(value = "/buttons", method = RequestMethod.GET)
+	public String buttons() {return "BootStrap/buttons";}
+
+	@RequestMapping(value = "/typography", method = RequestMethod.GET)
+	public String typography() {return "BootStrap/typography";}
+
+	@RequestMapping(value = "/icons", method = RequestMethod.GET)
+	public String icons() {return "BootStrap/icons";}
+
+	@RequestMapping(value = "/navs", method = RequestMethod.GET)
+	public String navs() {return "BootStrap/navs";}
+
+	@RequestMapping(value = "/badges", method = RequestMethod.GET)
+	public String badges() {return "BootStrap/badges";}
+
+	@RequestMapping(value = "/progress", method = RequestMethod.GET)
+	public String progress() {return "BootStrap/progress";}
+
+	@RequestMapping(value = "/forms", method = RequestMethod.GET)
+	public String forms() {return "BootStrap/forms";}
 }

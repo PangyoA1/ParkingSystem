@@ -14,18 +14,7 @@
   <!-- Favicon -->
   <link rel="icon" href="" sizes="32x32"/>
   <link rel="icon" href="" sizes="192x192"/>
-
-  <!-- Main CSS with Bootstrap -->
-  <link rel="stylesheet" href="assets/custom/1.0.0/css/style.min.css">
-  <!-- Style just for doc. Remove it for your project. -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap/assets/css/docs.min.css">
-
-  <!-- CSS Vendor -->
-  <link rel="stylesheet" href="assets/vendor/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/vendor/toastr/2.1.3/toastr.min.css">
-  <link rel="stylesheet" href="assets/vendor/highlight/9.12.0/styles/default.css">
-
-  <script src="assets/vendor/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+  <jsp:include page="/resources/include/bootstrap_First.jsp"/>
 </head>
 <body class="bg-gray-100">
 
@@ -73,7 +62,7 @@
               </a>
               <ul id="cNavItem1" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="index.html">Dashboard 1</a>
+                  <a class="nav-link nav-level-1" href="dashboad111111">Dashboard111111111111111111</a>
                 </li>
                 <!--<li class="nav-item">-->
                 <!--<a class="nav-link nav-level-1" href="index-2.html">Dashboard 2</a>-->
@@ -87,20 +76,20 @@
             <!--</a>-->
             <!--</li>-->
             <li class="nav-item">
-              <a class="nav-link" href="charts.html">
+              <a class="nav-link" href="Charts">
                 <i class="fa fa-pie-chart" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Charts</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="widgets.html">
+              <a class="nav-link" href="Widgets">
                 <i class="fa fa-list" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Widgets</span>
                 <span class="badge badge-success text-uppercase float-right d-none d-lg-block">New</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="Tables">
                 <i class="fa fa-table" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Tables</span>
               </a>
@@ -140,7 +129,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="grid.html">
+              <a class="nav-link" href="Grid">
                 <i class="fa fa-th" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Grid</span>
                 <span class="badge badge-danger text-uppercase float-right d-none d-lg-block">Hot</span>
@@ -159,10 +148,10 @@
               </a>
               <ul id="cNavItem6" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav2">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="login.html">Login</a>
+                  <a class="nav-link nav-level-1" href="login">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="404.html">404 Error</a>
+                  <a class="nav-link nav-level-1" href="page404">404 Error</a>
                 </li>
               </ul>
             </li>
@@ -173,27 +162,27 @@
               </a>
               <ul id="cNavItem5" class="nav flex-column collapse bg-dark" data-parent="#sidebarNav2">
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="buttons.html">Buttons</a>
+                  <a class="nav-link nav-level-1" href="buttons">Buttons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="typography.html">Typography</a>
+                  <a class="nav-link nav-level-1" href="typography">Typography</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="icons.html">Icons</a>
+                  <a class="nav-link nav-level-1" href="icons">Icons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="navs.html">Navs</a>
+                  <a class="nav-link nav-level-1" href="navs">Navs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="badges.html">Badges, Labels</a>
+                  <a class="nav-link nav-level-1" href="badges">Badges, Labels</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-level-1" href="progress.html">Progress</a>
+                  <a class="nav-link nav-level-1" href="progress">Progress</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="forms.html">
+              <a class="nav-link" href="forms">
                 <i class="fa fa-id-card" aria-hidden="true"></i>
                 <span class="d-none d-lg-inline">Forms</span>
               </a>
@@ -336,7 +325,7 @@
 
               <ul class="list-unstyled">
                 <li class="dropdown-item media border-bottom-1 border-light p-4">
-                  <img src="assets/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                  <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                   <div class="media-body">
                     <div class="d-flex w-100 justify-content-between">
                       <h6 class="mb-1 mr-4">Please make it</h6>
@@ -347,7 +336,7 @@
                   </div>
                 </li>
                 <li class="dropdown-item media border-bottom-1 border-light p-4">
-                  <img src="assets/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                  <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                   <div class="media-body">
                     <div class="d-flex w-100 justify-content-between">
                       <h6 class="mb-1 mr-4">Good job!</h6>
@@ -358,7 +347,7 @@
                   </div>
                 </li>
                 <li class="dropdown-item media border-bottom-1 border-light p-4">
-                  <img src="assets/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                  <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                   <div class="media-body">
                     <div class="d-flex w-100 justify-content-between">
                       <h6 class="mb-1 mr-4">Design issue</h6>
@@ -387,7 +376,7 @@
           <li class="m-sm-1 m-md-2 position-relative">
             <a data-toggle="dropdown" href="#" aria-expanded="false">
               <div class="d-inline-block mr-2">
-                <img src="assets/custom/1.0.0/images/03.jpg" class="rounded-circle" height="32px">
+                <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" class="rounded-circle" height="32px">
               </div>
               <div class="d-none d-lg-inline-block">
                 <span class="d-block">John Brown</span>
@@ -405,7 +394,7 @@
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Mailbox
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="login.html">
+              <a class="dropdown-item" href="login">
                 <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
               </a>
             </div>
@@ -646,7 +635,7 @@
 
                     <ul class="list-unstyled">
                       <li class="media border-bottom-1 border-light p-4">
-                        <img src="assets/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1 mr-4">Please make it Urgently</h6>
@@ -657,7 +646,7 @@
                         </div>
                       </li>
                       <li class="media border-bottom-1 border-light p-4">
-                        <img src="assets/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1 mr-4">Good job!</h6>
@@ -668,7 +657,7 @@
                         </div>
                       </li>
                       <li class="media border-bottom-1 border-light p-4">
-                        <img src="assets/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1 mr-4">Your Design issue</h6>
@@ -679,7 +668,7 @@
                         </div>
                       </li>
                       <li class="media border-bottom-1 border-light p-4">
-                        <img src="assets/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1 mr-4">Please make it Urgently</h6>
@@ -690,7 +679,7 @@
                         </div>
                       </li>
                       <li class="media border-bottom-1 border-light p-4">
-                        <img src="assets/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1 mr-4">Good job!</h6>
@@ -702,7 +691,7 @@
                       </li>
                       <!--
                                                 <li class="media border-bottom-1 border-light p-4">
-                                                  <img src="assets/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                                                  <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                                                   <div class="media-body">
                                                     <div class="d-flex w-100 justify-content-between">
                                                       <h6 class="mb-1 mr-4">Your Design issue</h6>
@@ -972,7 +961,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </td>
                         <td class="align-middle">
@@ -980,7 +969,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/gb.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/gb.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>35%</small></span>
@@ -1001,7 +990,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </th>
                         <td class="align-middle">
@@ -1009,7 +998,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/us.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/us.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>64%</small></span>
@@ -1030,7 +1019,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </th>
                         <td class="align-middle">
@@ -1038,7 +1027,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/ca.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/ca.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>85%</small></span>
@@ -1059,7 +1048,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </td>
                         <td class="align-middle">
@@ -1067,7 +1056,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/gb.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/gb.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>35%</small></span>
@@ -1088,7 +1077,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </th>
                         <td class="align-middle">
@@ -1096,7 +1085,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/us.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/us.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>64%</small></span>
@@ -1117,7 +1106,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="assets/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
                         </th>
                         <td class="align-middle">
@@ -1125,7 +1114,7 @@
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
-                          <img src="assets/custom/1.0.0/images/flags/ca.png">
+                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/ca.png">
                         </td>
                         <td class="align-middle d-none d-md-table-cell">
                           <span class="text-muted"><small>85%</small></span>
@@ -1200,7 +1189,7 @@
             <ul class="list-unstyled list-striped">
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                 <div class="media-body">
                   <a href="#!">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et quam elit.
@@ -1214,7 +1203,7 @@
               </li>
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3">
+                <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
                   <a href="#!">
                     Donec sed magna nec lorem feugiat tincidunt eget nec tortor.
@@ -1228,7 +1217,7 @@
               </li>
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3">
+                <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
                   <a href="#!">
                     Curabitur rutrum, orci et ultrices malesuada, tortor dolor sodales felis
@@ -1242,7 +1231,7 @@
               </li>
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/05.jpg" height="44px" class="rounded-circle d-flex mr-3">
+                <img src="/resources/BootStrap/custom/1.0.0/images/05.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
                   <a href="#!">
                     Vivamus accumsan, urna vel malesuada congue, odio quam vestibulum dolor
@@ -1256,7 +1245,7 @@
               </li>
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/06.jpg" height="44px" class="rounded-circle d-flex mr-3">
+                <img src="/resources/BootStrap/custom/1.0.0/images/06.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
                   <a href="#!">
                     Phasellus porttitor sit amet ligula vitae elementum. Mauris auctor sollicitudin nibh
@@ -1270,7 +1259,7 @@
               </li>
 
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
-                <img src="assets/custom/1.0.0/images/07.jpg" height="44px" class="rounded-circle d-flex mr-3">
+                <img src="/resources/BootStrap/custom/1.0.0/images/07.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
                   <a href="#!">
                     Etiam quis dui et mauris posuere semper ut sed libero. Etiam aliquam, quam quis sodales
@@ -1401,18 +1390,6 @@
 
   </div>
 </div>
-
-<!-- JS Common -->
-<script src="assets/vendor/popper/1.12.9/popper.min.js"></script>
-<script src="assets/vendor/toastr/2.1.3/toastr.min.js"></script>
-<script src="assets/vendor/highlight/9.12.0/highlight.pack.js"></script>
-
-<!-- JS Page -->
-<script src="assets/vendor/chartjs/2.7.0/chart.min.js"></script>
-
-<!-- JS Custom -->
-<script src="assets/custom/1.0.0/js/bootstrap.min.js"></script>
-<script src="assets/custom/1.0.0/js/script.js"></script>
-<script src="assets/custom/1.0.0/js/source-code.js"></script>
+<jsp:include page="/resources/include/bootstrap_End.jsp"/>
 </body>
 </html>

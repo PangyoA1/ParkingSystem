@@ -54,6 +54,10 @@
 	<div class="col-md-6 col-xs-12">
 		<img src="${pageContext.request.contextPath}/resources/image/pangyomap.png" width="100%">
 	</div>
-	
+
+	<div>
+		${list}
+	</div>
+
 </body>
 </html>
