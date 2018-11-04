@@ -34,7 +34,7 @@ public class HomeController {
 			String formattedDate = dateFormat.format(date);
 			model.addAttribute("serverTime", formattedDate );
 
-			return "home";
+			return "v2/login";
 	}
 
 	@RequestMapping(value = "/home2", method = RequestMethod.GET)
@@ -108,7 +108,17 @@ public class HomeController {
 	public String Gables() {return "BootStrap/grid";}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {return "BootStrap/login";}
+	public String login(Locale locale, Model model) {
+
+		final  String thisMethod =	Thread.currentThread().getStackTrace()[1].getMethodName();
+		logger.info("location is {}.", thisMethod);
+
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+
+		return "v2/login";}
 
 	@RequestMapping(value = "/page404", method = RequestMethod.GET)
 	public String page404() {return "BootStrap/404";}
@@ -133,4 +143,16 @@ public class HomeController {
 
 	@RequestMapping(value = "/forms", method = RequestMethod.GET)
 	public String forms() {return "BootStrap/forms";}
+
+	@RequestMapping(value = "/MyDashboard", method = RequestMethod.GET)
+	public String MyDashboard() {return "v2/mydashboard";}
+
+	@RequestMapping(value = "/Community", method = RequestMethod.GET)
+	public String Community() {return "v2/community";}
+
+	@RequestMapping(value = "/Setting", method = RequestMethod.GET)
+	public String Setting() {return "v2/setting";}
+
+	@RequestMapping(value = "/Dashboard", method = RequestMethod.GET)
+	public String Dashboard() {return "v2/dashboard";}
 }

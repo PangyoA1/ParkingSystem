@@ -1,8 +1,6 @@
-
-
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<%@ page contentType="text/html;charset=UTF-8"%>
 <head>
   <!-- Title -->
   <title>OpenAdmin - HTML5 client</title>
@@ -18,6 +16,8 @@
   <link rel="icon" href="" sizes="32x32"/>
   <link rel="icon" href="" sizes="192x192"/>
   <jsp:include page="/resources/include/bootstrap_First.jsp"/>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a60b94eb8d0494bbce134d29e06d584d"></script>
+
 </head>
 
 <body class="bg-gray-100">
@@ -54,14 +54,15 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Income</h3>
+                    <h3 class="widget-title">시작일</h3>
+
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">$23,654.56 </p>
+                      <p class="h5">2018년 11월 1일 </p>
                       <p class="text-muted mt-2">Total per Month</p>
                     </div>
                   </div>
@@ -78,14 +79,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Visits</h3>
+                    <h3 class="widget-title">종료일</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">125,6 <span>k</span></p>
+                      <p class="h5">2019년 11월 1일</p>
                       <p class="text-muted mt-2">Total per Month</p>
                     </div>
                   </div>
@@ -102,14 +103,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Orders</h3>
+                    <h3 class="widget-title">남은 일수</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">367,650</p>
+                      <p class="h5">720 일</p>
                       <p class="text-muted mt-2">New Paid Orders</p>
                     </div>
                   </div>
@@ -126,20 +127,19 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">New Accounts</h3>
+                    <h3 class="widget-title">장소</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
-                    <div>
-                      <p class="h2">400,500</p>
+                    <p>
+                      <p><div class="h5" id="placepick">판교알파오피스텔1</div></p>
                       <p class="text-muted mt-2">From the Start</p>
                     </div>
-                  </div>
                   <footer></footer>
                 </div>
-                <span class="badge badge-primary">
+                  <span class="badge badge-primary">
                       Now <i class="fa fa-bolt" aria-hidden="true"></i>
                     </span>
               </section>
@@ -154,10 +154,36 @@
                 <div class="widget-block">
 
                   <header>
-                    <h3 class="widget-title">Sales</h3>
+                    <h3 class="widget-title">주차공간 선택</h3>
                     <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Select
+                    </p>
+                  </header>
+
+                  <div class="row">
+                    <div id="map" style="width:70%;height:400px;border: solid;border-color: #baa3a3;border-width: thin;"></div>
+                    <div class="col-lg-3 widget-content pb-5">
+                      <div style="text-align: center"><button type="button" class="btn btn-info" style="width:70%;text-align: center">신청하기</button></div><br><br>
+                      <div style="text-align: center"><button type="button" class="btn btn-info" style="width:70%;text-align: center">자세히</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12">
+              <section class="widget shadow-01" id="widget-05">
+                <div class="widget-block">
+
+                  <header>
+                    <h3 class="widget-title">선택지 월별 여유공간 및 가격</h3>
+                    <p class="text-muted">
+                      Select
                     </p>
                   </header>
 
@@ -173,7 +199,7 @@
                               labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                               datasets: [{
                                 backgroundColor: '#27A9E0',
-                                data: [12, 22, 25, 37, 33, 34, 38, 22, 29, 26, 33, 21]
+                                data: [0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 3, 1]
                               }]
                             },
                             options: {
@@ -184,7 +210,9 @@
                               scales: {
                                 yAxes: [{
                                   ticks: {
-                                    fontColor: "#999999"
+                                      min : 0,
+                                      max : 15,
+                                      fontColor: "#999999"
                                   }
                                 }],
                                 xAxes: [{
@@ -202,28 +230,28 @@
                     <div class="col-lg-4 widget-content pb-5">
 
                       <div class="mt-3">
-                        <h4 class="witget-title mb-0">745</h4>
-                        <p class="text-muted mb-1">Total orders trough Marketplaces</p>
+                        <h4 class="witget-title mb-0">70 만원</h4>
+                        <p class="text-muted mb-1">6 Month</p>
                         <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                          <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #29a432" aria-valuenow="22" aria-valuemin="0"
+                               aria-valuemax="31"></div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3">
+                        <h4 class="witget-title mb-0">37 만원</h4>
+                        <p class="text-muted mb-1">3 Month</p>
+                        <div class="progress" style="height: 4px;">
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="70" aria-valuemin="0"
                                aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="mt-3">
-                        <h4 class="witget-title mb-0">6,764</h4>
-                        <p class="text-muted mb-1">Total Affiliate Sales</p>
+                        <h4 class="witget-title mb-0">13 만원</h4>
+                        <p class="text-muted mb-1">1 Month</p>
                         <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
-                               aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <h4 class="witget-title mb-0">12,876</h4>
-                        <p class="text-muted mb-1">Subscribtion Sales</p>
-                        <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                          <div class="progress-bar" role="progressbar" style="width: 16%;background-color: #e36f85" aria-valuenow="85" aria-valuemin="0"
                                aria-valuemax="100"></div>
                         </div>
                       </div>
@@ -249,12 +277,12 @@
                 <div class="widget-block">
 
                   <header>
-                    <h3 class="widget-title">Incoming Messages</h3>
+                    <h3 class="widget-title">공지 사항</h3>
                     <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit
+                      11월 공지
                     </p>
                   </header>
-                  <div class="widget-content py-3">
+                  <div class="widget-content py-3" style="height:600px">
 
                     <div class="mb-4">
                       <h5 class="tab-title">6 Notes Received</h5>
@@ -265,13 +293,26 @@
                         <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
+                            <h6 class="mb-1 mr-4">3개월 10% 할인 </h6>
                             <small class="text-secondary">3 days ago</small>
                           </div>
                           Lorem ipsum dolor sit amet, consectetur ...
                           <small class="text-muted d-block">John Mitchell at 2:30 am 11.06.2014</small>
                         </div>
                       </li>
+                      <li class="media border-bottom-1 border-light p-4">
+                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
+                        <div class="media-body">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4">6개월 20% 할인</h6>
+                            <small class="text-success">1 days ago</small>
+                          </div>
+                          Lorem ipsum dolor sit amet, consectetur ...
+                          <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
+                        </div>
+                      </li>
+
+
                       <li class="media border-bottom-1 border-light p-4">
                         <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
@@ -283,52 +324,7 @@
                           <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
                         </div>
                       </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Your Design issue</h6>
-                            <small class="text-warning">23 hrs ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
-                            <small class="text-secondary">3 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">John Mitchell at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Good job!</h6>
-                            <small class="text-success">1 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <!--
-                                                <li class="media border-bottom-1 border-light p-4">
-                                                  <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                                                  <div class="media-body">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h6 class="mb-1 mr-4">Your Design issue</h6>
-                                                      <small class="text-warning">23 hrs ago</small>
-                                                    </div>
-                                                    Lorem ipsum dolor sit amet, consectetur ...
-                                                    <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
-                                                  </div>
-                                                </li>
-                      -->
+
                     </ul>
 
                   </div>
@@ -352,8 +348,7 @@
                       <header>
                         <h3 class="widget-title">Views</h3>
                         <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          개방 수 변화
                         </p>
                       </header>
                       <div class="widget-content py-3">
@@ -413,11 +408,13 @@
                     <div class="widget-block">
 
                       <header>
-                        <h3 class="widget-title">Traffic Source</h3>
+                        <h5 class="widget-title">공간 현황</h5>
                         <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore
+                            <span class="badge" style="background-color: #71c7c1;">알파리움</span> 11 <br>
+                            <span class="badge" style="background-color: #f9ce5e;;">해링턴</span> 12  <br>
+                            <span class="badge" style="background-color: #ff675f;">솔리드스페이스</span> 1
                         </p>
+
                       </header>
                       <div class="widget-content py-3">
                         <canvas id="chart-doughnut"></canvas>
@@ -453,11 +450,12 @@
                     <div class="widget-block">
 
                       <header>
-                        <h3 class="widget-title">Geography</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore
-                        </p>
+                        <h5 class="widget-title">예상 추가 주차공간</h5>
+                          <p class="text-muted">
+                              <span class="badge" style="background-color: #9cabc5;">1주 이내</span> 1 <br>
+                              <span class="badge" style="background-color: #27a9e0;;">2주 이내</span> 2  <br>
+                              <span class="badge" style="background-color: #ff675f;">1달 이내</span> 3
+                          </p>
                       </header>
                       <div class="widget-content py-3">
                         <canvas id="chart-pie"></canvas>
@@ -493,11 +491,12 @@
                     <div class="widget-block">
 
                       <header>
-                        <h3 class="widget-title">Traffic Source</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore
-                        </p>
+                        <h5 class="widget-title">장소별 IN/OUT</h5>
+                          <p class="text-muted">
+                              <span class="badge" style="background-color: #71c7c1;">알파리움</span> 11 <br>
+                              <span class="badge" style="background-color: #f9ce5e;;">해링턴</span> 12  <br>
+                              <span class="badge" style="background-color: #ff675f;">솔리드스페이스</span> 1
+                          </p>
                       </header>
                       <div class="widget-content py-3">
 
@@ -567,7 +566,7 @@
                 <div class="widget-block">
 
                   <header>
-                    <h3>Purchases</h3>
+                    <h3>주차장 목록</h3>
                     <!--<p class="text-muted">-->
                     <!--</p>-->
                   </header>
@@ -576,8 +575,8 @@
                       <thead class="thead-light">
                       <tr>
                         <th class="text-center">Photo</th>
-                        <th>User</th>
-                        <th class=" text-center">Country</th>
+                        <th>Place</th>
+                        <th class=" text-center">Available</th>
                         <th class="d-none d-md-table-cell">Usage</th>
                         <th class="text-center">Payment</th>
                         <th class="d-none d-lg-table-cell">Activity</th>
@@ -592,7 +591,7 @@
                           </div>
                         </td>
                         <td class="align-middle">
-                          <strong>James O'Brien</strong>
+                          <strong>디 테라스 오피스텔</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -619,9 +618,9 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
-                          <strong>Mark Bolton</strong>
+                          <strong>코트야드메리어트</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -642,35 +641,6 @@
                           20 hrs ago
                         </td>
                         <td class="align-middle text-right pr-4 d-none d-md-table-cell">60%</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
-                          </div>
-                        </th>
-                        <td class="align-middle">
-                          <strong>Michael Thunderbolt</strong>
-                          <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
-                        </td>
-                        <td class="align-middle text-center">
-                          <img src="/resources/BootStrap/custom/1.0.0/images/flags/ca.png">
-                        </td>
-                        <td class="align-middle d-none d-md-table-cell">
-                          <span class="text-muted"><small>85%</small></span>
-                          <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                                 aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                        <td class="align-middle payment text-center">
-                          <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                        </td>
-                        <td class="align-middle d-none d-lg-table-cell">
-                          <span class="text-muted d-block"><small>Last login</small></span>
-                          2 days ago
-                        </td>
-                        <td class="align-middle text-right pr-4 d-none d-md-table-cell">67%</td>
                       </tr>
                       <tr>
                         <td class="text-center">
@@ -679,7 +649,7 @@
                           </div>
                         </td>
                         <td class="align-middle">
-                          <strong>James O'Brien</strong>
+                          <strong>알파돔시티</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -706,9 +676,9 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
-                          <strong>Mark Bolton</strong>
+                          <strong>알파돔타워1</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -735,9 +705,9 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
-                          <strong>Michael Thunderbolt</strong>
+                          <strong>알파돔타워2</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -1019,4 +989,70 @@
 </div>
 <jsp:include page="/resources/include/bootstrap_End.jsp"/>
 </body>
+<script>
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new daum.maps.LatLng(37.3965221, 127.1097504), //지도의 중심좌표.
+        level: 4 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
+    var imageSrc = "http://shopforclipart.com/images/diary-cliparts/14.jpg";
+    var imageSize = new daum.maps.Size(24, 35);
+    var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize);
+
+    var marker1 = new daum.maps.Marker({
+        position : new daum.maps.LatLng(37.398041, 127.112136),
+        title : '해링턴', // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image : markerImage // 마커 이미지
+    });
+
+    var marker2 = new daum.maps.Marker({
+        position : new daum.maps.LatLng(37.395357, 127.108252),
+        title : '알파리움', // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image : markerImage // 마커 이미지
+    });
+    marker1.setMap(map);
+    marker2.setMap(map);
+    daum.maps.event.addListener(marker1, 'click', function() {
+        $("#placepick").text("해링턴오피스텔chan");
+        if (!selectedMarker || selectedMarker !== marker) {
+            marker.setImage(overImage);
+        }
+    });
+
+    daum.maps.event.addListener(marker2, 'click', function() {
+        $("#placepick").text("알파리움1단지");
+        if (!selectedMarker || selectedMarker !== marker) {
+            marker.setImage(overImage);
+        }
+    });
+
+
+        function aniit(){
+            if (!document.all)
+                return
+            if (ani_table.style.borderColor=="#66ff66")
+                ani_table.style.borderColor="#009900"
+            else
+                ani_table.style.borderColor="#66ff66"
+        }
+    setInterval("aniit()", 500)
+
+    var datepicker = new Datepickk();
+
+    function closeOnSelectDemo(){
+        datepicker.unselectAll();
+        datepicker.closeOnSelect = true;
+        console.log(datepicker.closeOnSelect);
+        datepicker.onSelect = function(checked){
+            document.getElementById("seldate").value = this.toLocaleDateString();
+        };
+        datepicker.onClose = function(){
+            datepicker.closeOnSelect = false;
+            datepicker.onClose = null;
+        }
+        datepicker.show();
+    }
+</script>
 </html>

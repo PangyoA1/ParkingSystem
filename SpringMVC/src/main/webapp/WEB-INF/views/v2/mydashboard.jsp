@@ -1,8 +1,6 @@
-
-
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<%@ page contentType="text/html;charset=UTF-8"%>
 <head>
   <!-- Title -->
   <title>OpenAdmin - HTML5 client</title>
@@ -19,7 +17,6 @@
   <link rel="icon" href="" sizes="192x192"/>
   <jsp:include page="/resources/include/bootstrap_First.jsp"/>
 </head>
-
 <body class="bg-gray-100">
 
 <div class="container-fluid no-gutters">
@@ -54,14 +51,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Income</h3>
+                    <h3 class="widget-title">시작일</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">$23,654.56 </p>
+                      <p class="h5">2018년 11월 1일 </p>
                       <p class="text-muted mt-2">Total per Month</p>
                     </div>
                   </div>
@@ -78,14 +75,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Visits</h3>
+                    <h3 class="widget-title">종료일</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">125,6 <span>k</span></p>
+                      <p class="h5">2019년 11월 1일</p>
                       <p class="text-muted mt-2">Total per Month</p>
                     </div>
                   </div>
@@ -102,14 +99,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Orders</h3>
+                    <h3 class="widget-title">남은 일수</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">367,650</p>
+                      <p class="h5">720 일</p>
                       <p class="text-muted mt-2">New Paid Orders</p>
                     </div>
                   </div>
@@ -126,14 +123,14 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">New Accounts</h3>
+                    <h3 class="widget-title">장소</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">400,500</p>
+                      <p class="h5">판교알파오피스텔1</p>
                       <p class="text-muted mt-2">From the Start</p>
                     </div>
                   </div>
@@ -154,10 +151,9 @@
                 <div class="widget-block">
 
                   <header>
-                    <h3 class="widget-title">Sales</h3>
+                    <h3 class="widget-title">월별 실질 사용계</h3>
                     <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      주말, 공휴일 제외 일수
                     </p>
                   </header>
 
@@ -173,7 +169,7 @@
                               labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                               datasets: [{
                                 backgroundColor: '#27A9E0',
-                                data: [12, 22, 25, 37, 33, 34, 38, 22, 29, 26, 33, 21]
+                                data: [22, 18, 21, 21, 21, 19, 22, 22, 18, 21, 22, 20]
                               }]
                             },
                             options: {
@@ -184,7 +180,8 @@
                               scales: {
                                 yAxes: [{
                                   ticks: {
-                                    fontColor: "#999999"
+                                      min : 10,
+                                      fontColor: "#999999"
                                   }
                                 }],
                                 xAxes: [{
@@ -202,28 +199,28 @@
                     <div class="col-lg-4 widget-content pb-5">
 
                       <div class="mt-3">
-                        <h4 class="witget-title mb-0">745</h4>
-                        <p class="text-muted mb-1">Total orders trough Marketplaces</p>
+                        <h4 class="witget-title mb-0">30</h4>
+                        <p class="text-muted mb-1">Total days</p>
                         <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                          <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #29a432" aria-valuenow="22" aria-valuemin="0"
+                               aria-valuemax="31"></div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3">
+                        <h4 class="witget-title mb-0">22</h4>
+                        <p class="text-muted mb-1">Total Working days</p>
+                        <div class="progress" style="height: 4px;">
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 67%;" aria-valuenow="70" aria-valuemin="0"
                                aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="mt-3">
-                        <h4 class="witget-title mb-0">6,764</h4>
-                        <p class="text-muted mb-1">Total Affiliate Sales</p>
+                        <h4 class="witget-title mb-0">8</h4>
+                        <p class="text-muted mb-1">Total Holidays</p>
                         <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
-                               aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <h4 class="witget-title mb-0">12,876</h4>
-                        <p class="text-muted mb-1">Subscribtion Sales</p>
-                        <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                          <div class="progress-bar" role="progressbar" style="width: 33%;background-color: #e36f85" aria-valuenow="85" aria-valuemin="0"
                                aria-valuemax="100"></div>
                         </div>
                       </div>
@@ -619,7 +616,7 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
                           <strong>Mark Bolton</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
@@ -648,7 +645,7 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
                           <strong>Michael Thunderbolt</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
@@ -706,7 +703,7 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
                           <strong>Mark Bolton</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
@@ -735,7 +732,7 @@
                           <div class="avatar">
                             <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
                           </div>
-                        </th>
+                        </td>
                         <td class="align-middle">
                           <strong>Michael Thunderbolt</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>

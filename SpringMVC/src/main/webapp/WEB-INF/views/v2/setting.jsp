@@ -1,8 +1,5 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<%@ page contentType="text/html;charset=UTF-8"%>
 <head>
   <!-- Title -->
   <title>OpenAdmin - HTML5 client</title>
@@ -19,7 +16,6 @@
   <link rel="icon" href="" sizes="192x192"/>
   <jsp:include page="/resources/include/bootstrap_First.jsp"/>
 </head>
-
 <body class="bg-gray-100">
 
 <div class="container-fluid no-gutters">
