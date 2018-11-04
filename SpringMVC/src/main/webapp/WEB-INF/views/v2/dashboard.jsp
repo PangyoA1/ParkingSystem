@@ -19,7 +19,7 @@
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a60b94eb8d0494bbce134d29e06d584d"></script>
 
 </head>
-
+<%--<jsp:include page="../test.jsp"/>--%>
 <body class="bg-gray-100">
 
 <div class="container-fluid no-gutters">

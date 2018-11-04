@@ -155,4 +155,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/Dashboard", method = RequestMethod.GET)
 	public String Dashboard() {return "v2/dashboard";}
+
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test() {return "test";}
 }
