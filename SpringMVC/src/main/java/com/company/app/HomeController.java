@@ -118,7 +118,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
 
-		return "v2/login";}
+		return "v2/login2";}
 
 	@RequestMapping(value = "/page404", method = RequestMethod.GET)
 	public String page404() {return "BootStrap/404";}

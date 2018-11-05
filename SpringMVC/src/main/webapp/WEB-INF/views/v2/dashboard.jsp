@@ -17,22 +17,16 @@
   <link rel="icon" href="" sizes="192x192"/>
   <jsp:include page="/resources/include/bootstrap_First.jsp"/>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a60b94eb8d0494bbce134d29e06d584d"></script>
-
 </head>
 <%--<jsp:include page="../test.jsp"/>--%>
 <body class="bg-gray-100">
 
 <div class="container-fluid no-gutters">
-
   <div class="row">
-
   <jsp:include page="include/leftsidebar.jsp"/>
-
     <!-- Main Part -->
     <div class="main-wrapper">
-
     <jsp:include page="include/navtop.jsp"/>
-
       <!-- Main Content -->
       <main>
 
@@ -177,7 +171,7 @@
           <div class="row">
 
             <div class="col-lg-12">
-              <section class="widget shadow-01" id="widget-05">
+              <section class="widget shadow-01" id="widget-05_2">
                 <div class="widget-block">
 
                   <header>
