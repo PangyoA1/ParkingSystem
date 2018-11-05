@@ -252,17 +252,15 @@
                     </p>
                   </header>
                   <div class="widget-content py-3">
-
                     <div class="mb-4">
                       <h5 class="tab-title">6 Notes Received</h5>
                     </div>
-
                     <ul class="list-unstyled">
                       <li class="media border-bottom-1 border-light p-4">
                         <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
+                            <h6 class="mb-1 mr-4">1주일 남았습니다</h6>
                             <small class="text-secondary">3 days ago</small>
                           </div>
                           Lorem ipsum dolor sit amet, consectetur ...
@@ -273,7 +271,7 @@
                         <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Good job!</h6>
+                            <h6 class="mb-1 mr-4">2주 남았습니다</h6>
                             <small class="text-success">1 days ago</small>
                           </div>
                           Lorem ipsum dolor sit amet, consectetur ...
@@ -284,68 +282,26 @@
                         <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
                           <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Your Design issue</h6>
+                            <h6 class="mb-1 mr-4">1달 남았습니다</h6>
                             <small class="text-warning">23 hrs ago</small>
                           </div>
                           Lorem ipsum dolor sit amet, consectetur ...
                           <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
                         </div>
                       </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
-                            <small class="text-secondary">3 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">John Mitchell at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Good job!</h6>
-                            <small class="text-success">1 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <!--
-                                                <li class="media border-bottom-1 border-light p-4">
-                                                  <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                                                  <div class="media-body">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h6 class="mb-1 mr-4">Your Design issue</h6>
-                                                      <small class="text-warning">23 hrs ago</small>
-                                                    </div>
-                                                    Lorem ipsum dolor sit amet, consectetur ...
-                                                    <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
-                                                  </div>
-                                                </li>
-                      -->
                     </ul>
-
                   </div>
-
                   <footer>
                     <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                   </footer>
-
                 </div>
               </section>
             </div>
-
             <div class="col-xl-8 col-lg-6">
-
               <div class="row">
-
                 <div class="col-lg-12">
                   <section class="widget shadow-01" id="widget-07">
                     <div class="widget-block">
-
                       <header>
                         <h3 class="widget-title">Views</h3>
                         <p class="text-muted">
@@ -396,19 +352,14 @@
                       <footer>
                         <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                       </footer>
-
                     </div>
                   </section>
                 </div>
-
               </div>
-
               <div class="row">
-
                 <div class="col-xl-4 col-md-12">
                   <section class="widget shadow-01" id="widget-08">
                     <div class="widget-block">
-
                       <header>
                         <h3 class="widget-title">Traffic Source</h3>
                         <p class="text-muted">
@@ -440,15 +391,12 @@
                       <footer>
                         <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                       </footer>
-
                     </div>
                   </section>
                 </div>
-
                 <div class="col-xl-4 col-md-12">
                   <section class="widget shadow-01" id="widget-09">
                     <div class="widget-block">
-
                       <header>
                         <h3 class="widget-title">Geography</h3>
                         <p class="text-muted">
@@ -480,15 +428,12 @@
                       <footer>
                         <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                       </footer>
-
                     </div>
                   </section>
                 </div>
-
                 <div class="col-xl-4 col-md-12">
                   <section class="widget shadow-01" id="widget-10">
                     <div class="widget-block">
-
                       <header>
                         <h3 class="widget-title">Traffic Source</h3>
                         <p class="text-muted">
@@ -497,7 +442,6 @@
                         </p>
                       </header>
                       <div class="widget-content py-3">
-
                         <canvas id="chartjs-3"></canvas>
                         <script>
                           $(function () {
@@ -798,20 +742,15 @@
             </a>
           </li>
         </ul>
-
         <div class="tab-content">
-
           <div class="tab-pane fade show active" id="notes" role="tabpanel" aria-labelledby="notes-tab">
-
             <div class="p-4">
               <h5 class="tab-title">6 Notes Received</h5>
               <p class="mb-0">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
-
             <ul class="list-unstyled list-striped">
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
                 <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                 <div class="media-body">
@@ -825,7 +764,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
                 <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
@@ -839,7 +777,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
                 <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
@@ -853,7 +790,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
                 <img src="/resources/BootStrap/custom/1.0.0/images/05.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
@@ -895,22 +831,16 @@
                   </div>
                 </div>
               </li>
-
             </ul>
-
           </div>
-
           <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
-
             <div class="p-4">
               <h5 class="tab-title">6 Tasks are Active</h5>
               <p class="mb-0">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
-
             <ul class="list-unstyled list-striped">
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-4">
                 <div class="media-body">
                   <a href="#!">
@@ -1000,18 +930,12 @@
                   </div>
                 </div>
               </li>
-
             </ul>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
     <!-- /Right Sidebar -->
-
   </div>
 </div>
 <jsp:include page="/resources/include/bootstrap_End.jsp"/>
