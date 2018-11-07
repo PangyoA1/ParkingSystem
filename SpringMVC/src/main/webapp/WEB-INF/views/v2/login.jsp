@@ -4,14 +4,12 @@
 <head>
     <!-- Title -->
     <title>OpenAdmin - HTML5 client</title>
-
     <!-- Required Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="keywords" content="html5, template, website, responsive, bootstrap">
     <meta name="author" content="neuethemes">
-
     <!-- Favicon -->
     <link rel="icon" href="" sizes="32x32"/>
     <link rel="icon" href="" sizes="192x192"/>
@@ -19,25 +17,16 @@
     <jsp:include page="/resources/include/bootstrap_First.jsp"/>
 </head>
 <body class="login-page dark">
-
 <div class="container-fluid no-gutters">
-
     <div class="row">
-
-
         <!-- Login Form -->
-
         <div class="login-wrapper">
-
             <P class="textcenter">${serverTime}.</P>
             <br>
             <div class="home3Alloter textcenter">3 Allotter</div>
             <br>
-
             <!-- /Logo -->
-
             <div class="pt-4">
-
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                     <li class="nav-item text-center border-0 mb-0 w-50">
                         <a class="nav-link border-0 active" id="login-tab" data-toggle="tab" href="#sign-in" role="tab"
@@ -52,11 +41,8 @@
                         </a>
                     </li>
                 </ul>
-
                 <div class="tab-content mt-4" id="myTabContent">
-
                     <div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="login-tab">
-
                         <form action="/Dashboard">
                             <div class="form-group">
                                 <!--<label for="loginEmail">Email address</label>-->
@@ -81,7 +67,6 @@
                         </form>
                     </div>
                     <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="register-tab">
-
                         <form action="/Dashboard">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -126,10 +111,7 @@
                 </div>
             </div>
         </div>
-
         <!-- /Login Form -->
-
-
     </div>
 </div>
 
@@ -189,53 +171,39 @@
                     var errorCode = error.code;
                     var errorMessage = error.message;
                     alert(errorMessage);
-
                 });
-
 //가입 성공했을 때 호출 되는 함수 - 위의 firebase의 인증 모듈과 다른 database 모듈임을 확인하자.
                 function logUser() {
                     var ref = firebaseDatabase.ref("users/" + userInfo.uid); //저장될 곳을 users라는 부모 키를 레퍼런스로 지정.
-
                     //저장 형식
                     var obj = {
                         name: name,
                     };
-
                     ref.set(obj); // 고유한 자식 키가 하나 생셩이 되면서 json 삽입
                     alert("가입성공");
-
                     //메인 페이지로 이동시키고 세션 저장시키기
                     window.location.href = "/index.html"
                 }
             })
         })
     });}
-
 </script>
-
 <div class="container">
     <h1>환영합니다!</h1>
-
     <div class="form-group">
         <label for="email">Email address:</label>
         <input type="email" class="form-control" id="email">
     </div>
-
     <div class="form-group">
         <label for="name">NicName:</label>
         <input type="text" class="form-control" id="name">
     </div>
-
     <div class="form-group">
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" id="pwd">
     </div>
-
     <button type="button" class="btn btn-default join" onclick="aa()">가입</button>
-
 </div>
 <!-- 가입 폼 끝 -->
-
-
 </body>
 </html>

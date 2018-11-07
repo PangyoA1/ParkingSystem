@@ -817,7 +817,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-3">
                 <img src="/resources/BootStrap/custom/1.0.0/images/07.jpg" height="44px" class="rounded-circle d-flex mr-3">
                 <div class="media-body">
@@ -870,7 +869,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-4">
                 <div class="media-body">
                   <a href="#!">
@@ -900,7 +898,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-4">
                 <div class="media-body">
                   <a href="#!">
@@ -915,7 +912,6 @@
                   </div>
                 </div>
               </li>
-
               <li class="media d-flex pl-4 pr-4 pt-3 pb-4">
                 <div class="media-body">
                   <a href="#!">
