@@ -251,7 +251,7 @@
                       Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit
                     </p>
                   </header>
-                  <div class="widget-content py-3">
+                  <div class="widget-content py-3" style="height: 608px">
                     <div class="mb-4">
                       <h5 class="tab-title">6 Notes Received</h5>
                     </div>

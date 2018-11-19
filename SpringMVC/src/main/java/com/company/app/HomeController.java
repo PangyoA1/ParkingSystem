@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class HomeController {
@@ -154,7 +155,10 @@ public class HomeController {
 	public String Setting() {return "v2/setting";}
 
 	@RequestMapping(value = "/Dashboard", method = RequestMethod.GET)
-	public String Dashboard() {return "v2/dashboard";}
+	public String Dashboard(HttpServletRequest request, Model model) {
+		String devflag = request.getParameter("dev");
+		model.addAttribute("dev", devflag );
+		return "v2/dashboard";}
 
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test() {return "test";}

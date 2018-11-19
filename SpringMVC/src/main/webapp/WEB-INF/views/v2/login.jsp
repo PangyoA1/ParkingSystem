@@ -31,7 +31,7 @@
 
             <P class="textcenter">${serverTime}.</P>
             <br>
-            <div class="home3Alloter textcenter">3 Allotter</div>
+            <div class="home3Alloter textcenter" onclick="location.href='/Dashboard?dev=dev'">3 Allotter</div>
             <br>
 
             <!-- /Logo -->
@@ -78,6 +78,8 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block join" onclick="aa()">구글 로그인/가입</button>
+
                         </form>
                     </div>
                     <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="register-tab">
@@ -212,7 +214,7 @@
     });}
 
 </script>
-
+<%--
 <div class="container">
     <h1>환영합니다!</h1>
 
@@ -231,9 +233,9 @@
         <input type="password" class="form-control" id="pwd">
     </div>
 
-    <button type="button" class="btn btn-default join" onclick="aa()">가입</button>
+    <button type="button" class="btn btn-default join" onclick="aa()">구글 로그인/가입</button>
 
-</div>
+</div>--%>
 <!-- 가입 폼 끝 -->
 
 

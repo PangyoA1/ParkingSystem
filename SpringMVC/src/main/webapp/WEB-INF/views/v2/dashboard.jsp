@@ -20,7 +20,6 @@
 </head>
 <%--<jsp:include page="../test.jsp"/>--%>
 <body class="bg-gray-100">
-
 <div class="container-fluid no-gutters">
   <div class="row">
   <jsp:include page="include/leftsidebar.jsp"/>
@@ -276,7 +275,7 @@
                       11월 공지
                     </p>
                   </header>
-                  <div class="widget-content py-3" style="height:600px">
+                  <div class="widget-content py-3" style="height:582px">
 
                     <div class="mb-4">
                       <h5 class="tab-title">6 Notes Received</h5>

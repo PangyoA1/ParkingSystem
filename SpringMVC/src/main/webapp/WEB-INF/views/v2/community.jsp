@@ -1,3 +1,4 @@
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +51,7 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Income</h3>
+                    <h3 class="widget-title">새 글 </h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
@@ -74,7 +75,7 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Visits</h3>
+                    <h3 class="widget-title">방문자</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
@@ -98,7 +99,7 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">Orders</h3>
+                    <h3 class="widget-title">답글</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
@@ -122,7 +123,7 @@
 
                 <div class="widget-block">
                   <header>
-                    <h3 class="widget-title">New Accounts</h3>
+                    <h3 class="widget-title">신규 가입자</h3>
                     <!--<p class="text-muted">-->
                     <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit-->
                     <!--</p>-->
@@ -140,422 +141,7 @@
                     </span>
               </section>
             </div>
-
           </div>
-
-          <div class="row">
-
-            <div class="col-lg-12">
-              <section class="widget shadow-01" id="widget-05">
-                <div class="widget-block">
-
-                  <header>
-                    <h3 class="widget-title">Sales</h3>
-                    <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                  </header>
-
-                  <div class="row">
-
-                    <div class="col-lg-8 widget-content py-3 my-3">
-                      <canvas id="chart-bar"></canvas>
-                      <script>
-                        $(function () {
-                          new Chart('chart-bar', {
-                            type: 'bar',
-                            data: {
-                              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-                              datasets: [{
-                                backgroundColor: '#27A9E0',
-                                data: [12, 22, 25, 37, 33, 34, 38, 22, 29, 26, 33, 21]
-                              }]
-                            },
-                            options: {
-                              maintainAspectRatio: false,
-                              legend: {
-                                display: false
-                              },
-                              scales: {
-                                yAxes: [{
-                                  ticks: {
-                                    fontColor: "#999999"
-                                  }
-                                }],
-                                xAxes: [{
-                                  ticks: {
-                                    fontColor: "#999999"
-                                  }
-                                }]
-                              }
-                            }
-                          });
-                        });
-                      </script>
-                    </div>
-
-                    <div class="col-lg-4 widget-content pb-5">
-
-                      <div class="mt-3">
-                        <h4 class="witget-title mb-0">745</h4>
-                        <p class="text-muted mb-1">Total orders trough Marketplaces</p>
-                        <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                               aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <h4 class="witget-title mb-0">6,764</h4>
-                        <p class="text-muted mb-1">Total Affiliate Sales</p>
-                        <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
-                               aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <h4 class="witget-title mb-0">12,876</h4>
-                        <p class="text-muted mb-1">Subscribtion Sales</p>
-                        <div class="progress" style="height: 4px;">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                               aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <footer>
-                    <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  </footer>
-
-                </div>
-              </section>
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-xl-4 col-lg-6">
-              <section class="widget shadow-01" id="widget-06">
-                <div class="widget-block">
-
-                  <header>
-                    <h3 class="widget-title">Incoming Messages</h3>
-                    <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit
-                    </p>
-                  </header>
-                  <div class="widget-content py-3">
-
-                    <div class="mb-4">
-                      <h5 class="tab-title">6 Notes Received</h5>
-                    </div>
-
-                    <ul class="list-unstyled">
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
-                            <small class="text-secondary">3 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">John Mitchell at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Good job!</h6>
-                            <small class="text-success">1 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Your Design issue</h6>
-                            <small class="text-warning">23 hrs ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Please make it Urgently</h6>
-                            <small class="text-secondary">3 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">John Mitchell at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <li class="media border-bottom-1 border-light p-4">
-                        <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                        <div class="media-body">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1 mr-4">Good job!</h6>
-                            <small class="text-success">1 days ago</small>
-                          </div>
-                          Lorem ipsum dolor sit amet, consectetur ...
-                          <small class="text-muted d-block">Michael Holmes at 2:30 am 11.06.2014</small>
-                        </div>
-                      </li>
-                      <!--
-                                                <li class="media border-bottom-1 border-light p-4">
-                                                  <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
-                                                  <div class="media-body">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h6 class="mb-1 mr-4">Your Design issue</h6>
-                                                      <small class="text-warning">23 hrs ago</small>
-                                                    </div>
-                                                    Lorem ipsum dolor sit amet, consectetur ...
-                                                    <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
-                                                  </div>
-                                                </li>
-                      -->
-                    </ul>
-
-                  </div>
-
-                  <footer>
-                    <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  </footer>
-
-                </div>
-              </section>
-            </div>
-
-            <div class="col-xl-8 col-lg-6">
-
-              <div class="row">
-
-                <div class="col-lg-12">
-                  <section class="widget shadow-01" id="widget-07">
-                    <div class="widget-block">
-
-                      <header>
-                        <h3 class="widget-title">Views</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                      </header>
-                      <div class="widget-content py-3">
-                        <canvas id="chart-line"></canvas>
-                        <script>
-                          $(function () {
-                            new Chart('chart-line', {
-                              type: 'line',
-                              data: {
-                                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-                                datasets: [{
-                                  backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                                  borderColor: '#EC807A',
-                                  data: [12, 32, 38, 27, 33, 54, 21, 12, 22, 36, 43, 21]
-                                }]
-                              },
-                              options: {
-                                maintainAspectRatio: false,
-                                elements: {
-                                  line: {
-                                    tension: 0.4,
-                                    "borderWidth": 2
-                                  }
-                                },
-                                legend: {display: false},
-                                scales: {
-                                  yAxes: [{
-                                    ticks: {
-                                      fontColor: "#999999"
-                                    }
-                                  }],
-                                  xAxes: [{
-                                    ticks: {
-                                      fontColor: "#999999"
-                                    }
-                                  }]
-                                }
-                              }
-                            });
-                          });
-                        </script>
-                      </div>
-                      <footer>
-                        <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                      </footer>
-
-                    </div>
-                  </section>
-                </div>
-
-              </div>
-
-              <div class="row">
-
-                <div class="col-xl-4 col-md-12">
-                  <section class="widget shadow-01" id="widget-08">
-                    <div class="widget-block">
-
-                      <header>
-                        <h3 class="widget-title">Traffic Source</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore
-                        </p>
-                      </header>
-                      <div class="widget-content py-3">
-                        <canvas id="chart-doughnut"></canvas>
-                        <script>
-                          $(function () {
-                            new Chart('chart-doughnut', {
-                              type: 'doughnut',
-                              data: {
-                                labels: ['Yellow', 'Red', 'Green'],
-                                datasets: [{
-                                  backgroundColor: ['#F9CE5E', '#FF675F', '#71C7C1'],
-                                  data: [33, 10, 40]
-                                }]
-                              },
-                              options: {
-                                maintainAspectRatio: false,
-                                legend: {display: false}
-                              }
-                            });
-                          });
-                        </script>
-                      </div>
-                      <footer>
-                        <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                      </footer>
-
-                    </div>
-                  </section>
-                </div>
-
-                <div class="col-xl-4 col-md-12">
-                  <section class="widget shadow-01" id="widget-09">
-                    <div class="widget-block">
-
-                      <header>
-                        <h3 class="widget-title">Geography</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore
-                        </p>
-                      </header>
-                      <div class="widget-content py-3">
-                        <canvas id="chart-pie"></canvas>
-                        <script>
-                          $(function () {
-                            new Chart('chart-pie', {
-                              type: 'pie',
-                              data: {
-                                datasets: [{
-                                  data: [33, 12, 77],
-                                  backgroundColor: ['#27A9E0', '#F33F5A', '#9CABC5']
-                                }],
-                                labels: ['Blue', 'Red', 'Grey']
-                              },
-                              options: {
-                                maintainAspectRatio: false,
-                                legend: {display: false}
-                              }
-                            });
-                          });
-                        </script>
-                      </div>
-                      <footer>
-                        <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                      </footer>
-
-                    </div>
-                  </section>
-                </div>
-
-                <div class="col-xl-4 col-md-12">
-                  <section class="widget shadow-01" id="widget-10">
-                    <div class="widget-block">
-
-                      <header>
-                        <h3 class="widget-title">Traffic Source</h3>
-                        <p class="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore
-                        </p>
-                      </header>
-                      <div class="widget-content py-3">
-
-                        <canvas id="chartjs-3"></canvas>
-                        <script>
-                          $(function () {
-                            new Chart(document.getElementById("chartjs-3"), {
-                              "type": "radar",
-                              "data": {
-                                "labels": ["1", "2", "3", "4", "5", "6", "7"],
-                                "datasets": [{
-                                  "label": "My First Dataset",
-                                  "data": [32, 1, 24, 11, 28, 30, 13],
-                                  "fill": true,
-                                  "backgroundColor": "rgba(255, 99, 132, 0.2)",
-                                  "borderColor": "#EC807A",
-                                  "pointBackgroundColor": "rgb(255, 99, 132)",
-                                  "pointBorderColor": "#fff",
-                                  "pointHoverBackgroundColor": "#fff",
-                                  "pointHoverBorderColor": "rgb(255, 99, 132)"
-                                },
-                                  {
-                                    "label": "My Second Dataset",
-                                    "data": [9, 12, 34, 11, 27, 18, 29],
-                                    "fill": true,
-                                    "backgroundColor": "rgba(54, 162, 235, 0.2)",
-                                    "borderColor": "rgb(54, 162, 235)",
-                                    "pointBackgroundColor": "rgb(54, 162, 235)",
-                                    "pointBorderColor": "#fff",
-                                    "pointHoverBackgroundColor": "#fff",
-                                    "pointHoverBorderColor": "rgb(54, 162, 235)"
-                                  }]
-                              },
-                              "options": {
-                                maintainAspectRatio: false,
-                                legend: {display: false},
-                                "elements": {
-                                  "line": {
-                                    "tension": 0,
-                                    "borderWidth": 2
-                                  }
-                                }
-                              }
-                            });
-                          });
-                        </script>
-
-                      </div>
-                      <footer>
-                        <a href="#!">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                      </footer>
-
-                    </div>
-                  </section>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
           <div class="row">
 
             <div class="col-lg-12">
@@ -563,7 +149,7 @@
                 <div class="widget-block">
 
                   <header>
-                    <h3>Purchases</h3>
+                    <h3>게시판</h3>
                     <!--<p class="text-muted">-->
                     <!--</p>-->
                   </header>
@@ -571,12 +157,12 @@
                     <table class="table table-hover table-outline table-dashboard-1">
                       <thead class="thead-light">
                       <tr>
-                        <th class="text-center">Photo</th>
-                        <th>User</th>
-                        <th class=" text-center">Country</th>
-                        <th class="d-none d-md-table-cell">Usage</th>
-                        <th class="text-center">Payment</th>
-                        <th class="d-none d-lg-table-cell">Activity</th>
+                        <th class="text-center">번 호</th>
+                        <th>제목</th>
+                        <th class=" text-center">작성자</th>
+                        <th class="d-none d-md-table-cell">Payment</th>
+                        <th class="text-center">날짜</th>
+                        <th class="d-none d-lg-table-cell">날 짜</th>
                         <th class="text-right pr-4 d-none d-md-table-cell">Satisfaction</th>
                       </tr>
                       </thead>
@@ -584,11 +170,11 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            1
                           </div>
                         </td>
                         <td class="align-middle">
-                          <strong>James O'Brien</strong>
+                          <strong>제목 테스트 1</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -613,11 +199,11 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            2
                           </div>
                         </th>
                         <td class="align-middle">
-                          <strong>Mark Bolton</strong>
+                          <strong>제목 테스트 2</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -642,11 +228,11 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            3
                           </div>
                         </th>
                         <td class="align-middle">
-                          <strong>Michael Thunderbolt</strong>
+                          <strong>제목 테스트 3</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -671,11 +257,11 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/02.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            4
                           </div>
                         </td>
                         <td class="align-middle">
-                          <strong>James O'Brien</strong>
+                          <strong>제목 테스트 4</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -700,11 +286,11 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/03.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            5
                           </div>
                         </th>
                         <td class="align-middle">
-                          <strong>Mark Bolton</strong>
+                          <strong>제목 테스트 5</strong>
                           <span class="text-muted d-block"><small>Registered 02 Nov 2017</small></span>
                         </td>
                         <td class="align-middle text-center">
@@ -729,7 +315,7 @@
                       <tr>
                         <td class="text-center">
                           <div class="avatar">
-                            <img src="/resources/BootStrap/custom/1.0.0/images/04.jpg" height="38" class="rounded-circle d-flex mx-auto" alt="#">
+                            6
                           </div>
                         </th>
                         <td class="align-middle">
