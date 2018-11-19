@@ -58,7 +58,7 @@ public class HomeController {
 
 			final  String thisMethod =	Thread.currentThread().getStackTrace()[1].getMethodName();
 			logger.info("location is {}.", thisMethod);
-		return "home_sub1";
+			return "home_sub1";
 	}
 
 	@RequestMapping(value = "/ParkingSystem", method = RequestMethod.GET)
@@ -82,8 +82,8 @@ public class HomeController {
 			return "MyProgress";
 	}
     @RequestMapping(value = "/CoreUI", method = RequestMethod.GET)
-    //public String CoreUI() {return "BootStrap/index";}
-	public String CoreUI() {return "v2/home";}
+    		//public String CoreUI() {return "BootStrap/index";}
+			public String CoreUI() {return "v2/home";}
 
 	@RequestMapping(value = "/boardList.do")
 	public String boardList(Model model) throws Exception {

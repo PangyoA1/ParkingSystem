@@ -966,18 +966,12 @@
                   </div>
                 </div>
               </li>
-
             </ul>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
     <!-- /Right Sidebar -->
-
   </div>
 </div>
 <jsp:include page="/resources/include/bootstrap_End.jsp"/>
