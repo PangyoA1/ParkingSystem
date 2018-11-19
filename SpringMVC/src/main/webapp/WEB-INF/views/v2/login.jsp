@@ -191,7 +191,6 @@
     });}
 </script>
 
-
 <div class="container">
     <h1>환영합니다!</h1>
     <div class="form-group">
@@ -207,9 +206,9 @@
         <input type="password" class="form-control" id="pwd">
     </div>
 
-    <button type="button" class="btn btn-default join" onclick="aa()">가입</button>
-</div>
+    <button type="button" class="btn btn-default join" onclick="aa()">구글 로그인/가입</button>
 
+</div>
 <!-- 가입 폼 끝 -->
 </body>
 </html>
