@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface BoardDAO {
 	List<BoardVO> selectBoardList() throws Exception;
+	List<BoardVO> selectBoardList_Community() throws Exception;
 }

@@ -21,4 +21,9 @@ public class BoardServiceImpl implements BoardService {
         return boardMapper.selectBoardList();
     }
 
+    @Override
+    @Transactional
+    public List<BoardVO> selectBoardList_Community() throws Exception {
+        return boardMapper.selectBoardList_Community();
+    }
 }

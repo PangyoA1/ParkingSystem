@@ -10,5 +10,6 @@
 	
 	<typeAliases>
 		<typeAlias alias="boardVO" type="com.company.app.vo.BoardVO"/>
+		<typeAlias alias="boardVOCommunity" type="com.company.app.vo.BoardCommunityVO"/>
 	</typeAliases>
 </configuration>

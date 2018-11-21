@@ -149,7 +149,12 @@ public class HomeController {
 	public String MyDashboard() {return "v2/mydashboard";}
 
 	@RequestMapping(value = "/Community", method = RequestMethod.GET)
-	public String Community() {return "v2/community";}
+	public String Community(Model model) throws Exception {
+
+		List list = BoardService.selectBoardList_Community();
+		model.addAttribute("list", list);
+		return "v2/community";
+	}
 
 	@RequestMapping(value = "/Setting", method = RequestMethod.GET)
 	public String Setting() {return "v2/setting";}

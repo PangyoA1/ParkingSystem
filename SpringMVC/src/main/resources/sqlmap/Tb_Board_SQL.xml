@@ -9,10 +9,16 @@
 	SELECT NUM
 	     , NAME
 	     , TITLE
-	     , CONTENT
+	     , CONTENTS
 	     , READ_COUNT
 	     , WRITE_DATE 
 	  FROM TB_BOARD 
 	 ORDER BY NUM DESC
 	</select>
+
+	<select id="selectBoardList_Community" resultType="boardVOCommunity">
+	SELECT * FROM TB_BOARD_COMMUNITY
+	 ORDER BY NUM DESC
+	</select>
+
 </mapper>

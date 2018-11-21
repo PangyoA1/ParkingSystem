@@ -9,6 +9,7 @@ public class BoardVO {
 	private String content;
 	private Integer readCount;
 	private Date writeDate;
+
 	public Integer getNum() {
 		return num;
 	}

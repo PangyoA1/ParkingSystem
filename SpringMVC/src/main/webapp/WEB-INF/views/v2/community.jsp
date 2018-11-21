@@ -19,6 +19,12 @@
 </head>
 <body class="bg-gray-100">
 
+${list[0]} <br>
+${list[1]} <br>
+<br>
+${list[0].num} :  ${list[0].title}
+<%--: ${list[0].content}: ${list[0].readCount}:  ${list[0].writeDate}--%>
+<%--BoardVO [num=1, name=null, title=1, content=null, readCount=1, writeDate=Wed Nov 21 15:37:38 KST 2018]--%>
 <div class="container-fluid no-gutters">
 
   <div class="row">
@@ -58,7 +64,7 @@
                   </header>
                   <div class="widget-content pt-1">
                     <div>
-                      <p class="h2">$23,654.56 </p>
+                      <p class="h2">11 개 </p>
                       <p class="text-muted mt-2">Total per Month</p>
                     </div>
                   </div>
@@ -69,10 +75,8 @@
                     </span>
               </section>
             </div>
-
             <div class="col-xl-3 col-lg-6">
               <section class="widget headerline-danger small shadow-01" id="widget-02">
-
                 <div class="widget-block">
                   <header>
                     <h3 class="widget-title">방문자</h3>
